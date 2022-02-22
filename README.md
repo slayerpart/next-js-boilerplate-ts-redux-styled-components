@@ -1,34 +1,34 @@
-# TypeScript & Styled Components Next.js example
+# Next.js Boilerplate including:
 
-This is a really simple project that show the usage of Next.js with TypeScript and Styled Components.
+- TypeScript - Static type checking
+- Styled Components - CSS in JS
+- Redux - Global app state with SSR support
+- ESLint — Find and fix problems in your code
+- Prettier — Code Formatter for consistent style
+- Yarn - Manage dependencies
 
-## Preview
+## Development
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript-styled-components)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript-styled-components&project-name=with-typescript-styled-components&repository-name=with-typescript-styled-components)
-
-## How to use it?
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+To start the project locally, run:
 
 ```bash
-npx create-next-app --example with-typescript-styled-components with-typescript-styled-components-app
-# or
-yarn create next-app --example with-typescript-styled-components with-typescript-styled-components-app
+yarn dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Open `http://localhost:3000` with your browser to see the result.
 
-## Notes
+## Scripts
 
-This is an amalgamation of the 2 existing examples:
+- `yarn dev` — Starts the application in development mode at `http://localhost:3000`.
+- `yarn build` — Creates an optimized production build of your application.
+- `yarn start` — Starts the application in production mode.
+- `yarn lint` — Runs ESLint for all files in the `src` directory.
+- `yarn check-types` — Validate code using TypeScript compiler.
 
-- [with-typescript](https://github.com/vercel/next.js/tree/canary/examples/with-typescript)
-- [with-styled-components](https://github.com/vercel/next.js/tree/canary/examples/with-styled-components)
+## Path Aliases
+
+TypeScript is configured with custom path aliases. To import components or files relative to repository root, use the `@` prefix.
+
+```tsx
+import { Button } from '@components/Button';
+```
