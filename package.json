@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "check-types": "./node_modules/.bin/tsc"
+    "check-types": "./node_modules/.bin/tsc -p ."
   },
   "dependencies": {
     "next": "latest",
